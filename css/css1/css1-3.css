@@ -1,0 +1,30 @@
+//Выравнивание с помощью inline-blok
+* {
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+}
+.wrapper > * {
+  display: inline-block;//установка блоков в ряд
+  position: relative;
+  top:40%; //сдвигаем блоки в центр (50% - 10%(половина висоты блока))
+  width: 20vw;
+  height: 20vh;
+  margin-left: -.36em;//убираем пробели между inline блоками
+}
+.elem1 {
+  background-color: black;
+}
+.elem2 {
+  background-color: red;
+}
+.elem3 {
+  background-color: darkblue;
+}
+.elem4 {
+  background-color: green;
+}
+.elem5 {
+  background-color: yellow;
+}1

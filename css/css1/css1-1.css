@@ -1,0 +1,29 @@
+//Выравнивание с помощью flex-box
+* {
+  margin: 0 auto;//убираем margin для всех элементов
+}
+.wrapper {
+  display: flex;//устанавливаем значение flex для обертки-родителя 
+  align-items: center;//выравниваем элементы по обеим осям
+  justify-content: center;
+  height: 100vh;
+}
+.wrapper > * {
+  width: 20vw;//размер дочерних элементов 20%
+  height: 20vh;
+}
+.elem1 {
+  background-color: black;
+}
+.elem2 {
+  background-color: red;
+}
+.elem3 {
+  background-color: darkblue;
+}
+.elem4 {
+  background-color: green;
+}
+.elem5 {
+  background-color: yellow;
+} 

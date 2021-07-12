@@ -1,0 +1,28 @@
+//Выравнивание модального окна по центру если известны его размеры 
+* {
+  box-sizing: border-box;//размещение контента с учетом границ и внутренних отступов в родительский конейнер
+}
+
+.fixed-overlay {
+  position: fixed;//фиксируем модальное окно
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {//Выставляем окно по центру
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -75px;
+}
+
+.modal_container {
+  background-color: #fff;
+  width: 200px;
+  height: 150px;
+} 
